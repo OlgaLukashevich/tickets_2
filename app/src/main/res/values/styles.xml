@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DatePickerTheme" parent="Theme.AppCompat.Light.Dialog">
+        <!-- Цвет заголовка -->
+        <item name="colorAccent">@color/gray</item>
+        <!-- Цвет текста даты -->
+        <item name="android:textColorPrimary">@color/black</item>
+        <!-- Цвет фона -->
+<!--        <item name="android:background">@color/Gwhite</item>-->
+        <item name="android:radius">6dp</item>
+
+
+    </style>
+
+    <style name="CustomDatePickerStyle" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <item name="android:datePickerStyle">@style/CustomDatePicker</item>
+    </style>
+
+    <style name="CustomDatePicker" parent="@android:style/Widget.Material.Light.DatePicker">
+        <item name="android:datePickerMode">calendar</item>
+        <item name="android:headerBackground">@color/gray</item>
+<!--        <item name="android:headerTextAppearance">@style/CustomDatePickerTitle</item>-->
+    </style>
+
+    <style name="CustomDatePickerTitle" parent="@android:style/TextAppearance.Material.Title">
+        <item name="android:textSize">16sp</item>
+<!--        <item name="android:textColor">@color/your_text_color</item>-->
+    </style>
+</resources>
